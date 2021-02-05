@@ -5,7 +5,8 @@ class Printer{
     
     constructor(){
     	this._brand = 'Epson'; //will be a string 
-    	this._model = 'TX-200'; //will be a string 
+        this._model = 'TX-200'; //will be a string 
+        
     }
   
     //Just like printers, this printer has a function that 
@@ -16,3 +17,7 @@ class Printer{
 }
 
 //Your code here
+
+let myPrinter= new Printer();
+let testResult= myPrinter.printerTest();
+console.log(testResult);

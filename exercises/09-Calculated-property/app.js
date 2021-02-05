@@ -9,7 +9,10 @@ class Person{
 	    let ageDate = new Date(ageDifMs); // milliseconds from epoch
 	    return Math.abs(ageDate.getUTCFullYear() - 1970);
 	}
-	
+    
+    canDrinkAlcohol(){
+        return (this.getAge() >= 21? true: false); // manera corta de hacer if
+    }
 	
 }
 
